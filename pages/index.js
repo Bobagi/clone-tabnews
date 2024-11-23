@@ -17,8 +17,8 @@ function Home() {
         console.error("Erro ao tocar o áudio:", err);
       });
     }
-  };    
-  
+  };
+
   return (
     <div>
       <img
@@ -31,6 +31,10 @@ function Home() {
       </audio>
     </div>
   );
+}
+
+function teste() {
+  console.log("teste");
 }
 
 export default Home;
