@@ -15,7 +15,6 @@ function checkPostgres() {
   async function handleReturn(error, stdout) {
     if (stdout.search("accepting connections") === -1) {
       process.stdout.write("🟡");
-      await new Promise((resolve) => setTimeout(resolve, 1000));
       return checkPostgres();
     }
 
